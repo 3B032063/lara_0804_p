@@ -11,6 +11,16 @@ try {
     die();
 }
 
+use Carbon\Carbon;
+//Carbon::setLocale('zh');
+
+echo Carbon::now()->toDateString();
+
+=Carbon::createFromFormat('Y-m-d H:i:s', $row->created_at)->diffForHumans()
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
